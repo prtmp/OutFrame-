@@ -238,23 +238,36 @@ input{
     width: 30px;
     height: 30px;
     z-index: 2;
+    cursor: pointer;
 }
 
 #banderas{
     width: 30px;
     height: 30px;
     z-index: 1;
+    position: relative;
 }
 
 #banderas img{
     width: 100%;
-    transition: .2s;
+    transition: 0.2s;
+    border-radius: 20px;
+    animation: giroinf 4s linear infinite ;
+    transform-origin: center;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-#bandera-wrapper:hover img{
-    transform: scale(1.2);
+#ingles{
+    opacity: 0;
 }
-
+#cbox1:checked + #banderas #español{
+    opacity: 0;
+}
+#cbox1:checked + #banderas #ingles{
+    opacity: 1;
+}
 @media screen and (min-width: 1232px) {
     #Logo img{
     width: 20%;
