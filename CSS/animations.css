@@ -1,0 +1,26 @@
+@keyframes giroinf {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes girodisco{
+    from{
+        transform: rotate(0deg) scale(1.8,1.8);
+    }
+    to{
+        transform: rotate(360deg) scale(1.8,1.8);
+
+    }   
+}
+@keyframes girodisco2{
+    from{
+        transform: rotate(0deg) scale(1.1,1.1);
+    }
+    to{
+        transform: rotate(360deg) scale(1.2,1.2);
+
+    }   
+}
