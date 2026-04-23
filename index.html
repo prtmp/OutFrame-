@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,900;1,6..12,900&display=swap" rel="stylesheet"></head>
+    <link rel="stylesheet" href="CSS/acordeon.css">
+    <script src="JSS/acordeon.js" defer></script>
 </head>
 <body>
     <label id="bandera-wrapper">
@@ -161,12 +163,17 @@
     </main>
     <footer>   
         <div id="Contacto">
-            <h4 class="esp">Contacto</h4> <h4 class="eng">Contact</h4>
-            <div class="hidden"><p>outframe@outlook.com<br>+34 650 38 11 36<br>@outframe!</p></div>
+            <div class="acordeon-item">
+            <button class="acordeon-header"><h4 id="acordeonh4" class="esp">Contacto</h4><h4 class="eng">Contact</h4></button>
+            <div class="acordeon-body">
+                <p>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio expedita sapiente mollitia doloremque vel est nisi unde? Itaque atque laudantium magnam, voluptate cupiditate mollitia cumque tempora sed reprehenderit numquam suscipit?</p>
+            </div>
+        </div>        
+    </div>
         </div>
         <div id="Opinion">
-            <h4 class="esp">Opinión</h4> <h4 class="eng">Opinion</h4>
-            <div class="hidden"><a href="#"><div id="boton"><p class="esp"><b>Formulario</b></p><p class="eng"><b>Feedback</b></p></div></a></div>
+            <h4 class="esp">Opinión</h4><h4 class="eng">Opinion</h4>
+            <div class="hidden"></div>
         </div>
 
     </footer>

@@ -158,13 +158,19 @@ footer h4{
     font-size: 1.2rem;
     border-bottom: 1px solid black;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 30px;    
     margin-bottom: 0;
+    cursor: pointer;
+    color: white;
 }
 footer h5{
     font-size: 1rem;
     margin: 0;
     margin-top: 10px;
+}
+#acordeonh4{
+    padding-top: 0;
+    padding-bottom: 20px;
 }
 footer p{
     font-size: 0.9rem;
@@ -188,15 +194,6 @@ footer p{
 #Opinion{
     grid-column: 3/4;
 }
-#boton{
-    padding: 20px;
-    padding-bottom: 40px;
-    cursor: pointer;
-    background-color: #6d0404;
-    width: 80%;
-
-}
-
 .eng{
     display: none;
 }
@@ -208,6 +205,7 @@ footer:hover{
 footer:hover .hidden{
     visibility: visible;
     display: inline;
+    transition: 1s;
  
 }
 body:has(#cbox1:checked) .eng{
