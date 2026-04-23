@@ -149,6 +149,7 @@ footer{
     margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     height: 100px;
     background: #ac0505;
     text-align: center;
@@ -163,11 +164,7 @@ footer h4{
     cursor: pointer;
     color: white;
 }
-footer h5{
-    font-size: 1rem;
-    margin: 0;
-    margin-top: 10px;
-}
+
 #acordeonh4{
     padding-top: 0;
     padding-bottom: 20px;
@@ -176,6 +173,7 @@ footer p{
     font-size: 0.9rem;
     margin: 0;
     margin-top: 10px;
+    color: white;
 }
 
 .hidden{
@@ -190,9 +188,15 @@ footer p{
 
 #Contacto{
     grid-column: 1/2;
+    grid-row: 1/2;
+}
+#Problema{
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 #Opinion{
-    grid-column: 3/4;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 .eng{
     display: none;
@@ -265,6 +269,81 @@ input{
 #cbox1:checked + #banderas #ingles{
     opacity: 1;
 }
+
+@media screen and (min-width: 768px) {
+    #Logo img{
+    width: 35%;
+    }
+    #Logo img:hover{
+    margin-right: 2%;
+    }
+    #VideoInicio h2{
+        padding-left: 1%;
+        font-size: 2rem;
+    }
+    .cards{
+        margin-top: 2%;
+        width: 100%;
+        height: 15%;
+        margin-bottom: 7%;
+        align-items: center;
+
+    }   
+    .cards div img{
+        position: relative;
+        transform: scale(1,1);
+    }
+    .cards div img:hover{
+        animation-name: girodisco2;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    }
+    #eventostitle{
+        color: black;
+        font-family: Bowlby;
+        margin: 0; 
+        cursor: pointer;
+        z-index: 1;
+        font-size: 3rem;
+        position: absolute;
+        left: 35%;
+        top: 173%;
+    }
+    #destacodisco{
+        width: 30%;
+        left: 35%;
+        top: 162%;
+    }
+    #eventostitle:hover{
+        scale: 1.1;
+        rotate: 7deg;
+        transition: 0.7s;
+    }
+    #bandera-wrapper{
+        top: 25px;
+    }
+    #cbox1{
+        position: absolute;
+        opacity: 0;
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    #banderas{
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        position: relative;
+    }
+    #banderas img{
+        border-radius: 40px;
+    }
+}
+
+
 @media screen and (min-width: 1232px) {
     #Logo img{
     width: 20%;
