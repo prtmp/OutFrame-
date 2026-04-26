@@ -1,0 +1,107 @@
+header {
+    background-color: #1a1a1d;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 5.5%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    font-family: bowlby;
+}
+
+/* TAMAÑO DEL BOTÓN DE HAMBURGUESA */
+#btnMenu {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: #1a1a1d;
+    border: none;
+}
+
+#btnMenu:hover {
+    transform: scale(1.05);
+}
+
+/* SE AJUSTA EL SPAN DE LAS 3 RAYAS PARA CENTRARLO MEJOR*/
+#btnMenu img {  
+    width: 50%;
+    scale: 2.2;
+    animation: giroinf 4s linear infinite ;
+    transform-origin: center;
+}
+
+#menu {
+    min-height: 3rem;
+}
+
+/* EN DISEÑO MÓVIL NO SE MUESTRA EL MENÚ PARA ESCRITORIO */
+.menuDesktop {
+    display: none;
+
+    font-size: 1.2rem;
+}
+
+/* CAMBIO EL DISEÑO A TABLET Y ESCRITORIO */
+@media (min-width: 576px) {
+    /* En escritorio se muestra el menú completo */
+    .menuDesktop {
+        display: flex;
+        gap: 15px;
+    }
+    /* En escritorio se oculta el botón de hamburguesa */
+    #btnMenu {
+        display: none;
+    }
+}
+
+.menuDesktop a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease-out;
+}
+
+.menuDesktop a:hover {
+    color: rgb(69, 69, 69);
+}
+
+@keyframes abreCaja {
+    from {
+        transform: scaleY(0%);
+    }
+    to {
+        transform: scaleY(100%);
+    }
+}
+
+/* AL DESPLEGAR EL MENU EN EL MÓVIL */
+/* Al pulsar el botón de hamburguesa se añade/quita esta clase */
+/* Al tener esta clase, se muestra el menú en una caja desplegada */
+.menuDesplegado {
+    background-color: #1a1a1d;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* ESTO NECESITA AJUSTE (top): LA POSICIÓN DE LA VENTANA DESPLEGADA */
+    top: 56px;
+
+    padding: .5rem;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    animation-name: abreCaja;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    transform-origin: top;
+
+}

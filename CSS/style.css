@@ -28,6 +28,7 @@ body{
 }
 
 #Logo{
+    cursor:default;
     z-index: 10;
     grid-column: 3/4;
     position: fixed;
@@ -57,6 +58,7 @@ body{
     flex-direction: column-reverse;
 }
 #VideoInicio h2{
+    color: #1a1a1d;
     font-family: Bowlby;
     margin: 0; 
     padding-left: 2%;
@@ -83,6 +85,7 @@ a{
     position: absolute;
     left: 26%;
     top: 162%;
+    transition: all 0.5s ease;
 }
 #destacodisco{
     z-index: -1;
@@ -95,7 +98,6 @@ a{
 #eventostitle:hover{
 scale: 1.1;
 rotate: 7deg;
-transition: 0.7s;
 }
 
 .cards{
@@ -120,7 +122,7 @@ transition: 0.7s;
  animation-name: girodisco;
  animation-duration: 6s;
  animation-iteration-count: infinite;
- animation-timing-function: ease-in;
+ animation-timing-function: ease;
 
 
 }
@@ -153,7 +155,8 @@ footer{
     height: 100px;
     background: #ac0505;
     text-align: center;
-        color: white;
+    color: white;
+    transition: all 1s ease;
 }
 footer h4{
     font-size: 1.2rem;
@@ -347,6 +350,7 @@ input{
 @media screen and (min-width: 1232px) {
     #Logo img{
     width: 20%;
+    padding-top: 2%;
     }
     #Logo img:hover{
     margin-right: 2%;
@@ -354,6 +358,7 @@ input{
     #VideoInicio h2{
         padding-left: 1%;
         font-size: 2rem;
+        color: #1a1a1d;
     }
     .cards{
         margin-top: 2%;
@@ -395,7 +400,7 @@ input{
         transition: 0.7s;
     }
     #bandera-wrapper{
-        top: 25px;
+        top: 15px;
     }
     #cbox1{
         position: absolute;
@@ -407,8 +412,8 @@ input{
     }
 
     #banderas{
-        width: 50px;
-        height: 50px;
+        width: 30px;
+
         z-index: 1;
         position: relative;
     }
