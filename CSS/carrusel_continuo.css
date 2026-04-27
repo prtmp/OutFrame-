@@ -23,6 +23,13 @@
     margin-bottom: 10px;
 
 }
+#fondocarru2{
+    z-index: -2;
+    margin-top: 5%;
+    position: relative;
+    margin-bottom: 10px;
+
+}
 
 #carrusel {
     display: flex;
@@ -84,26 +91,109 @@
 
 }
 #item1{
-    background-color: yellow;
-    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: bowlby;
+
 }
 #item2{
-    background-color:blue;
-    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: bowlby;
 }
 #item3{
-    background-color: green;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: bowlby;
 }
 #item4{
-    background-color:red;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: bowlby;
+    
+}
+#fondocarru2 #carrusel {
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    opacity: 10%;
 }
 
+
+
+#fondocarru2 .carr_grupo {
+    /* CONFIGURAMOS EL ITEM DEL CONTENEDOR FLEX PARA QUE NO LOS REDIMENSIONE */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+
+    /* CADA GRUPO FORMA UNA REJILLA DE 4 COLUMNAS  */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+
+    /* ACTIVAMOS LA ANIMACIÓN DE LOS 2 GRUPOS */
+    animation-name: carr_scroll;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation: carr_scroll 10s linear infinite; */
+}
+#fondocarru2 .carr_grupo2 {
+    /* CONFIGURAMOS EL ITEM DEL CONTENEDOR FLEX PARA QUE NO LOS REDIMENSIONE */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+
+    /* CADA GRUPO FORMA UNA REJILLA DE 4 COLUMNAS  */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+
+    /* ACTIVAMOS LA ANIMACIÓN DE LOS 2 GRUPOS */
+    animation-name: carr_scroll2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation: carr_scroll 10s linear infinite; */
+}
+
+#fondocarru2 .carrusel_item {
+    position: relative;
+    width: 100%; 
+    margin-left: 10px;   
+    height: 10vh;
+
+}
 
 
 @media screen and (min-width: 1232px) {
     .carr_grupo{
+        flex-basis: 50%;
+    }
+    .carr_grupo2{
+        flex-basis: 50%;
+    }
+    #fondocarru2 .carr_grupo{
+        flex-basis: 50%;
+    }
+    #fondocarru2 .carr_grupo2{
         flex-basis: 50%;
     }
     

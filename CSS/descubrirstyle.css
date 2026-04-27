@@ -32,9 +32,147 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+#VideoSobreNosotros{
+    grid-column: 1/4;
+    height: 90vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#descmarca{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #1a1a1d;
+    font-size: 1.2rem;
+    cursor: default;
+}
+i{
+    transition: all 0.4s ease;
+}
+#descmarca:hover i{
+    color: #ac0505;
+    font-size: 1.4rem;
+}
+#organization{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 0.5fr;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40vh;
+}
+.cardorg{
+    background-color: #ac0505;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cardorg img{
+    width: 90%;
+    height: 50%;
+    background-color: azure;
+    border-radius: 10px;
+    margin-top: 10%;
 
+}
+#o1{
+    grid-row: 1/3;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#o2{
+    grid-row: 2/4;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#o3{
+    grid-row: 1/3;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardorg:hover{
+    transform: scale(1.1);   
+}
+#flexaboutus{
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#flexaboutus h3{
+    font-family: Bowlby;
+    font-size: 2.5rem;
+    position: absolute;
+    left: 17%;
+    margin-top: 40%;
+    transition: all 0.5s ease;
+    color: white;
+}
+#flexaboutus h3:hover{
+    transform: scale(1.2) rotate(7deg);
+    color: #ac0505; 
+}
+#valores{
+    margin-top: 10px;
+    text-align: center;
+}
+#valores h3{
+    color: white;
+   
+}
+
+@media screen and (min-width: 768px) {
+    #flexaboutus h3{
+    left: 35%;
+    margin-top: 22%;
+    }
+}
 @media screen and (min-width: 1232px) {
     .descubrir h3{
         font-size: 1.5rem;
+    }
+    #descmarca{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #1a1a1d;
+    font-size: 2.5rem;
+    cursor: default;
+    }
+    i{
+        transition: all 0.4s ease;
+    }
+    #descmarca:hover i{
+        color: #ac0505;
+        font-size: 2.7rem;
+    }
+    #flexaboutus h3{
+    left: 40%;
+    margin-top: 16%;
+    }
+    #organization{
+        height: 80vh;
+    }
+    .cardorg img{
+        margin-top: 0;
     }
 }
