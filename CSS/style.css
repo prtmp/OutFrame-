@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     background-color: #1a1a1d;
     font-family: "Nunito Sans", sans-serif;
@@ -6,80 +6,89 @@ body{
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500;
+        "wdth" 100,
+        "YTLC" 500;
     overflow-x: hidden;
     display: block;
     grid-template-columns: 1fr 1fr 1fr;
-    
+
 }
+
 @font-face {
     font-family: Bowlby;
     src: url(../FNT/BowlbyOneSC-Regular.ttf);
 }
-#gradient{
+
+#gradient {
     pointer-events: none;
     z-index: 9;
     height: 100px;
     width: 100%;
     position: fixed;
     opacity: 0;
-    background: linear-gradient(180deg, rgba(26,26,29,1) 0%, rgba(26,26,29,0) 82%);
+    background: linear-gradient(180deg, rgba(26, 26, 29, 1) 0%, rgba(26, 26, 29, 0) 82%);
     transition: 1s;
 }
 
-#Logo{
-    cursor:default;
+#Logo {
+    cursor: default;
     z-index: 10;
     grid-column: 3/4;
     position: fixed;
     display: flex;
     flex-direction: row-reverse;
 }
-#Logo img{
+
+#Logo img {
     padding: 1%;
     padding-top: 3%;
     width: 43%;
     cursor: pointer;
 }
-#Logo img:hover{
+
+#Logo img:hover {
     margin-right: 5%;
     scale: 1.2;
     transition: 0.5s;
 }
-#Logo:hover + #gradient{
+
+#Logo:hover+#gradient {
     opacity: 1;
     transition: 1s;
 }
-#VideoInicio{
+
+#VideoInicio {
     grid-column: 1/4;
     height: 90vh;
     background-color: gray;
     display: flex;
     flex-direction: column-reverse;
 }
-#VideoInicio h2{
+
+#VideoInicio h2 {
     color: #1a1a1d;
     font-family: Bowlby;
-    margin: 0; 
+    margin: 0;
     padding-left: 2%;
 }
-a h2{
+
+a h2 {
     cursor: pointer;
 }
-#VideoInicio a h2:hover{
+
+#VideoInicio a h2:hover {
     color: rgb(69, 69, 69);
     transition: 0.5s;
 }
-    
-a{
+
+a {
     text-decoration: none;
 }
 
-#eventostitle{
+#eventostitle {
     color: black;
     font-family: Bowlby;
-    margin: 0; 
+    margin: 0;
     cursor: pointer;
     z-index: 1;
     font-size: 3rem;
@@ -88,10 +97,11 @@ a{
     top: 162%;
     transition: all 0.5s ease;
 }
-#eventstitle{
+
+#eventstitle {
     color: black;
     font-family: Bowlby;
-    margin: 0; 
+    margin: 0;
     cursor: pointer;
     z-index: 1;
     font-size: 3rem;
@@ -99,71 +109,81 @@ a{
     top: 162%;
     transition: all 0.5s ease;
 }
-#destacodisco{
+
+#destacodisco {
     z-index: -1;
     width: 50%;
     position: absolute;
     top: 150%;
     animation: giroinf 5s linear infinite;
 }
-#flexdestaco{
+
+#flexdestaco {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#eventostitle:hover, #eventstitle:hover{
-scale: 1.1;
-rotate: 7deg;
+
+#eventostitle:hover,
+#eventstitle:hover {
+    scale: 1.1;
+    rotate: 7deg;
 }
 
-.cards{
+.cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 100%;
     height: 15%;
     margin-bottom: 20%;
-}   
-.cards div img{
+}
+
+.cards div img {
     position: relative;
     width: 100%;
-    transform: scale(1.7,1.7);
+    transform: scale(1.7, 1.7);
     z-index: 1;
     top: 50%;
 
 
 }
 
-.cards div img:hover{
- animation-name: girodisco;
- animation-duration: 6s;
- animation-iteration-count: infinite;
- animation-timing-function: ease;
+.cards div img:hover {
+    animation-name: girodisco;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 
 
 }
-#Indie{
-   grid-column: 1/2;
-   grid-row: 1/2; 
-}
-#Rock{
-   grid-column: 2/3;
-   grid-row: 2/3; 
-}
-#Experimental{
-   grid-column: 3/4;
-   grid-row: 1/2; 
-}
-#IndieEsp{
-   grid-column: 4/5;
-   grid-row: 2/3; 
-}
-#RockEsp{
-   grid-column: 5/6;
-   grid-row: 1/2; 
-}   
 
-footer{
+#Indie {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#Rock {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#Experimental {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#IndieEsp {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+#RockEsp {
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+footer {
     margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -174,73 +194,82 @@ footer{
     color: white;
     transition: all 1s ease;
 }
-footer h4{
+
+footer h4 {
     font-size: 1.2rem;
     border-bottom: 1px solid black;
     padding-top: 20px;
-    padding-bottom: 30px;    
+    padding-bottom: 30px;
     margin-bottom: 0;
     cursor: pointer;
     color: white;
 }
 
-footer p{
+footer p {
     font-size: 0.9rem;
     margin: 0;
     margin-top: 10px;
     color: white;
 }
 
-.hidden{
+.hidden {
     visibility: hidden;
     display: none;
 }
-.hidden img{
+
+.hidden img {
     padding-top: 10px;
     width: 45%;
     opacity: 50%;
 }
 
-#Contacto{
+#Contacto {
     grid-column: 1/2;
     grid-row: 1/2;
 }
-#Problema{
+
+#Problema {
     grid-column: 3/4;
     grid-row: 1/2;
 }
-#Opinion{
+
+#Opinion {
     grid-column: 2/3;
     grid-row: 1/2;
 }
-.eng{
+
+.eng {
     display: none;
 }
 
-footer:hover{
+footer:hover {
     height: 200px;
     transition: 1s;
 }
-footer:hover .hidden{
+
+footer:hover .hidden {
     visibility: visible;
     display: inline;
     transition: 1s;
- 
-}
-body:has(#cbox1:checked) .eng{
-display:block;
+
 }
 
-body:has(#cbox1:checked) .esp{
-display:none;
+body:has(#cbox1:checked) .eng {
+    display: block;
 }
-input{
+
+body:has(#cbox1:checked) .esp {
+    display: none;
+}
+
+input {
     height: 30px;
     width: 30px;
     margin-top: 10px;
     margin-left: 10px;
 }
-#bandera-wrapper{
+
+#bandera-wrapper {
     z-index: 100;
     position: fixed;
     top: 10px;
@@ -248,7 +277,7 @@ input{
     cursor: pointer;
 }
 
-#cbox1{
+#cbox1 {
     position: absolute;
     opacity: 0;
     width: 30px;
@@ -257,77 +286,86 @@ input{
     cursor: pointer;
 }
 
-#banderas{
+#banderas {
     width: 30px;
     height: 30px;
     z-index: 1;
     position: relative;
 }
 
-#banderas img{
+#banderas img {
     width: 100%;
     transition: 0.2s;
     border-radius: 20px;
-    animation: giroinf 4s linear infinite ;
+    animation: giroinf 4s linear infinite;
     transform-origin: center;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-#ingles{
+#ingles {
     opacity: 0;
 }
-#cbox1:checked + #banderas #español{
+
+#cbox1:checked+#banderas #español {
     opacity: 0;
 }
-#cbox1:checked + #banderas #ingles{
+
+#cbox1:checked+#banderas #ingles {
     opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
-    #Logo img{
-    width: 35%;
+    #Logo img {
+        width: 35%;
     }
-    #Logo img:hover{
-    margin-right: 2%;
+
+    #Logo img:hover {
+        margin-right: 2%;
     }
-    #VideoInicio h2{
+
+    #VideoInicio h2 {
         padding-left: 1%;
         font-size: 2rem;
     }
-    .cards{
+
+    .cards {
         margin-top: 2%;
         width: 100%;
         height: 15%;
         margin-bottom: 7%;
         align-items: center;
 
-    }   
-    .cards div img{
-        position: relative;
-        transform: scale(1,1);
     }
-    .cards div img:hover{
+
+    .cards div img {
+        position: relative;
+        transform: scale(1, 1);
+    }
+
+    .cards div img:hover {
         animation-name: girodisco2;
         animation-duration: 6s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in;
     }
-    #eventostitle{
+
+    #eventostitle {
         color: black;
         font-family: Bowlby;
-        margin: 0; 
+        margin: 0;
         cursor: pointer;
         z-index: 1;
         font-size: 3rem;
         position: absolute;
         top: 173%;
     }
-    #eventstitle{
+
+    #eventstitle {
         color: black;
         font-family: Bowlby;
-        margin: 0; 
+        margin: 0;
         cursor: pointer;
         z-index: 1;
         font-size: 3rem;
@@ -335,20 +373,25 @@ input{
         left: 35%;
         top: 173%;
     }
-    #destacodisco{
+
+    #destacodisco {
         width: 30%;
         left: 35%;
         top: 162%;
     }
-    #eventostitle:hover, #eventstitle:hover{
+
+    #eventostitle:hover,
+    #eventstitle:hover {
         scale: 1.1;
         rotate: 7deg;
         transition: 0.7s;
     }
-    #bandera-wrapper{
+
+    #bandera-wrapper {
         top: 25px;
     }
-    #cbox1{
+
+    #cbox1 {
         position: absolute;
         opacity: 0;
         width: 50px;
@@ -357,71 +400,84 @@ input{
         cursor: pointer;
     }
 
-    #banderas{
+    #banderas {
         width: 50px;
         height: 50px;
         z-index: 1;
         position: relative;
     }
-    #banderas img{
+
+    #banderas img {
         border-radius: 40px;
     }
 }
 
 
 @media screen and (min-width: 1232px) {
-    #Logo img{
-    width: 20%;
-    padding-top: 2%;
+    #Logo img {
+        width: 20%;
+        padding-top: 2%;
     }
-    #Logo img:hover{
-    margin-right: 2%;
+
+    #Logo img:hover {
+        margin-right: 2%;
     }
-    #VideoInicio h2{
+
+    #VideoInicio h2 {
         padding-left: 1%;
         font-size: 2rem;
         color: #1a1a1d;
     }
-    .cards{
+
+    .cards {
         margin-top: 2%;
         width: 100%;
         height: 15%;
         margin-bottom: 10%;
         align-items: center;
 
-    }   
-    .cards div img{
-        position: relative;
-        transform: scale(1,1);
     }
-    .cards div img:hover{
+
+    .cards div img {
+        position: relative;
+        transform: scale(1, 1);
+    }
+
+    .cards div img:hover {
         animation-name: girodisco2;
         animation-duration: 6s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in;
     }
-    #eventostitle{
+
+    #eventostitle {
         left: 42%;
         top: 230%;
     }
-    #eventstitle{
+
+    #eventstitle {
         left: 43%;
         top: 230%;
     }
-    #destacodisco{
+
+    #destacodisco {
         width: 20%;
         left: 40%;
         top: 215%;
     }
-    #eventostitle:hover, #eventostitle:hover{
+
+    #eventostitle:hover,
+    #eventostitle:hover {
         scale: 1.1;
         rotate: 7deg;
         transition: 0.7s;
     }
-    #bandera-wrapper{
+
+    #bandera-wrapper {
         top: 15px;
     }
-    #cbox1{
+
+    #cbox1 {
         position: absolute;
         opacity: 0;
         width: 50px;
@@ -430,13 +486,14 @@ input{
         cursor: pointer;
     }
 
-    #banderas{
+    #banderas {
         width: 30px;
 
         z-index: 1;
         position: relative;
     }
-    #banderas img{
+
+    #banderas img {
         border-radius: 40px;
     }
 }

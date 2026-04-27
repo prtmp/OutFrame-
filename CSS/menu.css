@@ -29,10 +29,10 @@ header {
 }
 
 /* SE AJUSTA EL SPAN DE LAS 3 RAYAS PARA CENTRARLO MEJOR*/
-#btnMenu img {  
+#btnMenu img {
     width: 50%;
     scale: 2.2;
-    animation: giroinf 4s linear infinite ;
+    animation: giroinf 4s linear infinite;
     transform-origin: center;
 }
 
@@ -49,11 +49,13 @@ header {
 
 /* CAMBIO EL DISEÑO A TABLET Y ESCRITORIO */
 @media (min-width: 576px) {
+
     /* En escritorio se muestra el menú completo */
     .menuDesktop {
         display: flex;
         gap: 15px;
     }
+
     /* En escritorio se oculta el botón de hamburguesa */
     #btnMenu {
         display: none;
@@ -74,6 +76,7 @@ header {
     from {
         transform: scaleY(0%);
     }
+
     to {
         transform: scaleY(100%);
     }
@@ -90,7 +93,7 @@ header {
     flex-direction: column;
     align-items: start;
     gap: 0.5rem;
-    
+
     position: absolute;
     left: 0;
     right: 0;

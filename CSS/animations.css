@@ -24,3 +24,22 @@
 
     }   
 }
+@keyframes carr_scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-210%);
+    }
+}
+
+@keyframes carr_scroll2 {
+    from {
+        transform: translateX(-205%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
