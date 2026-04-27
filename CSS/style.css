@@ -11,6 +11,7 @@ body{
     overflow-x: hidden;
     display: block;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
 @font-face {
     font-family: Bowlby;
@@ -87,15 +88,30 @@ a{
     top: 162%;
     transition: all 0.5s ease;
 }
+#eventstitle{
+    color: black;
+    font-family: Bowlby;
+    margin: 0; 
+    cursor: pointer;
+    z-index: 1;
+    font-size: 3rem;
+    position: absolute;
+    top: 162%;
+    transition: all 0.5s ease;
+}
 #destacodisco{
     z-index: -1;
     width: 50%;
     position: absolute;
-    left: 25%;
     top: 150%;
     animation: giroinf 5s linear infinite;
 }
-#eventostitle:hover{
+#flexdestaco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#eventostitle:hover, #eventstitle:hover{
 scale: 1.1;
 rotate: 7deg;
 }
@@ -168,10 +184,6 @@ footer h4{
     color: white;
 }
 
-#acordeonh4{
-    padding-top: 0;
-    padding-bottom: 20px;
-}
 footer p{
     font-size: 0.9rem;
     margin: 0;
@@ -310,6 +322,16 @@ input{
         z-index: 1;
         font-size: 3rem;
         position: absolute;
+        top: 173%;
+    }
+    #eventstitle{
+        color: black;
+        font-family: Bowlby;
+        margin: 0; 
+        cursor: pointer;
+        z-index: 1;
+        font-size: 3rem;
+        position: absolute;
         left: 35%;
         top: 173%;
     }
@@ -318,7 +340,7 @@ input{
         left: 35%;
         top: 162%;
     }
-    #eventostitle:hover{
+    #eventostitle:hover, #eventstitle:hover{
         scale: 1.1;
         rotate: 7deg;
         transition: 0.7s;
@@ -379,14 +401,11 @@ input{
         animation-timing-function: ease-in;
     }
     #eventostitle{
-        color: black;
-        font-family: Bowlby;
-        margin: 0; 
-        cursor: pointer;
-        z-index: 1;
-        font-size: 3rem;
-        position: absolute;
         left: 42%;
+        top: 230%;
+    }
+    #eventstitle{
+        left: 43%;
         top: 230%;
     }
     #destacodisco{
@@ -394,7 +413,7 @@ input{
         left: 40%;
         top: 215%;
     }
-    #eventostitle:hover{
+    #eventostitle:hover, #eventostitle:hover{
         scale: 1.1;
         rotate: 7deg;
         transition: 0.7s;

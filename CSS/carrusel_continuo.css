@@ -4,12 +4,12 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(-100%);
+        transform: translateX(-200%);
     }
 }
 @keyframes carr_scroll2 {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-205%);
     }
     to {
         transform: translateX(0);
@@ -17,7 +17,7 @@
 }
 
 #fondocarru{
-    z-index: -2;
+    z-index: 0;
     margin-top: 5%;
     position: relative;
     margin-bottom: 10px;
@@ -46,7 +46,7 @@
     flex-shrink: 0;
     flex-basis: 100%;
 
-    /* CADA GRUPO FORMA UNA REJILLA DE 4 COLUMNAS  */
+    /* CADA GRUPO FORMA UNA REJILLA DE 2 COLUMNAS  */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -91,7 +91,6 @@
 
 }
 #item1{
-
     display: flex;
     align-items: center;
     justify-content: center;
